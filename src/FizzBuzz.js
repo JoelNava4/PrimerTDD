@@ -1,6 +1,12 @@
-export function generarFizzBuzz(numero){
-    if (numero === 3){
+function generarCadena(numero){
+    if (numero % 3 === 0){
         return "Fizz"
     }
-    return numero.toString();
+    else{
+        return numero.toString();
+    }
+}
+
+export function generarFizzBuzz(numero){
+    return generarCadena(numero);
 }
